@@ -1,40 +1,52 @@
-.conteneur{
-    display:flex;
-    flex-direction: row;
-    /*felx-direction:row par defaut*/
-    margin-bottom: 30px;
+#conteneur{
+    margin:0 auto;
+    max-width: 980px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+}
+nav, main {
+    display: flex;
+
+}
+nav {
+    justify-content: space-around;
+}
+#droite, #gauche{
+    flex:0 0 30%;
+    margin-left: 20px;
+}
+footer{
+    display: flex;
     justify-content: center;
-    border: 1px dashed #000;
-
-}
-.truc,.chose {
-    flex-grow: 0;
-}
-p.machine{
-    flex-grow: 1;
-}
-p.bidule{
-    flex-shrink: 1;
-}
-.conteneur2{
-    display:flex;
-    flex-direction: row;
-    height:50px;
-    border:dashed 1px red;
-    
 }
 
-.conteneur3{
-    display:flex;
-    flex-direction: row;
-    height:50px;
-    justify-content: space-between;
-    border:dashed 1px green;
+header, nav, #gauche, section, #droite, footer{
+    padding: 5px;
 }
+header, footer{
+    background-color: bisque;
+    color:#fff
+}
+nav{
+    background-color: #aaa;
+}
+nav a {
+    text-decoration: none;
+    color:#000;
+}
+nav a:hover{
+    color:#fff;
 
-/*flex-flow:colum wrap;*/
-p.bloc{
-    background-color: aqua;
-    border:1px solid black;
-    
+}
+#gauche, #droite{
+    background-color: #eee;
+}
+#gauche a, #droite a {
+    text-decoration: none;
+    color:#000;
+}
+h1, h2, h3{
+    margin: auto;
 }
